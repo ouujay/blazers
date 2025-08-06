@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blazers - Robotics Team</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
@@ -12,7 +14,7 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Montserrat', sans-serif;
             line-height: 1.6;
             color: #333;
             overflow-x: hidden;
@@ -49,8 +51,9 @@
         .logo h1 {
             color: #ff4500;
             font-size: 24px;
-            font-weight: bold;
+            font-weight: 900;
             letter-spacing: 2px;
+            cursor: pointer;
         }
 
         .nav-links {
@@ -62,7 +65,7 @@
         .nav-links a {
             color: white;
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 600;
             transition: color 0.3s ease;
         }
 
@@ -77,7 +80,7 @@
             padding: 12px 24px;
             border-radius: 25px;
             cursor: pointer;
-            font-weight: 500;
+            font-weight: 600;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
         }
@@ -120,7 +123,7 @@
 
         .hero-title {
             font-size: clamp(48px, 8vw, 80px);
-            font-weight: 300;
+            font-weight: 800;
             color: white;
             margin-bottom: 20px;
             letter-spacing: -1px;
@@ -131,7 +134,7 @@
             color: white;
             margin-bottom: 40px;
             max-width: 600px;
-            font-weight: 300;
+            font-weight: 500;
         }
 
         .hero-description {
@@ -140,6 +143,7 @@
             margin-bottom: 40px;
             max-width: 500px;
             line-height: 1.6;
+            font-weight: 400;
         }
 
         .hero-buttons {
@@ -155,7 +159,7 @@
             border: none;
             padding: 15px 30px;
             border-radius: 50px;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
             font-size: 16px;
@@ -195,7 +199,7 @@
 
         .countdown-title {
             font-size: 48px;
-            font-weight: 300;
+            font-weight: 800;
             color: #333;
             margin-bottom: 60px;
         }
@@ -213,7 +217,7 @@
 
         .countdown-number {
             font-size: 80px;
-            font-weight: bold;
+            font-weight: 900;
             color: #ff4500;
             display: block;
             line-height: 1;
@@ -222,7 +226,7 @@
         .countdown-label {
             font-size: 24px;
             color: #333;
-            font-weight: 300;
+            font-weight: 600;
             margin-top: 10px;
         }
 
@@ -241,7 +245,7 @@
 
         .stories-title {
             font-size: 48px;
-            font-weight: 300;
+            font-weight: 800;
             text-align: center;
             margin-bottom: 80px;
             color: #333;
@@ -268,11 +272,12 @@
             margin-bottom: 20px;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-weight: 600;
         }
 
         .story-title {
             font-size: 36px;
-            font-weight: 300;
+            font-weight: 700;
             color: #333;
             margin-bottom: 30px;
             line-height: 1.2;
@@ -283,6 +288,7 @@
             color: #666;
             margin-bottom: 40px;
             line-height: 1.6;
+            font-weight: 400;
         }
 
         .read-btn {
@@ -291,7 +297,7 @@
             border: none;
             padding: 12px 30px;
             border-radius: 25px;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
             display: inline-flex;
@@ -330,7 +336,7 @@
 
         .cta-title {
             font-size: 64px;
-            font-weight: 300;
+            font-weight: 900;
             margin-bottom: 20px;
         }
 
@@ -338,6 +344,7 @@
             font-size: 18px;
             margin-bottom: 40px;
             opacity: 0.9;
+            font-weight: 500;
         }
 
         .cta-btn {
@@ -346,7 +353,7 @@
             border: none;
             padding: 18px 40px;
             border-radius: 50px;
-            font-weight: 600;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
             font-size: 16px;
@@ -379,18 +386,21 @@
             font-size: 24px;
             margin-bottom: 20px;
             letter-spacing: 2px;
+            font-weight: 900;
         }
 
         .footer-tagline {
             color: #888;
             font-style: italic;
             font-size: 14px;
+            font-weight: 400;
         }
 
         .footer-section h3 {
             color: white;
             margin-bottom: 20px;
             font-size: 16px;
+            font-weight: 700;
         }
 
         .footer-section ul {
@@ -405,6 +415,7 @@
             color: #888;
             text-decoration: none;
             transition: color 0.3s ease;
+            font-weight: 500;
         }
 
         .footer-section ul li a:hover {
@@ -417,6 +428,7 @@
             text-align: center;
             color: #666;
             font-size: 14px;
+            font-weight: 400;
         }
 
         /* Mobile Responsiveness */
@@ -522,7 +534,7 @@
             </div>
             <nav class="nav">
                 <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
+                    <li><a href="About.html">About</a></li>
                     <li><a href="#project">Project</a></li>
                     <li><a href="#team">Team</a></li>
                 </ul>
@@ -628,7 +640,7 @@
                 <div class="footer-section">
                     <h3>Sections</h3>
                     <ul>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="javascript:void(0)" onclick="goToAbout()">About</a></li>
                         <li><a href="#projects">Projects</a></li>
                         <li><a href="#team">Team</a></li>
                         <li><a href="#support">Support</a></li>
@@ -656,6 +668,15 @@
     </footer>
 
     <script>
+        // Navigation function to About page
+        function goToAbout() {
+            // For demo purposes, showing alert
+            // In actual implementation, you would use: window.location.href = 'about.html';
+            alert('Navigating to About page...');
+            // Uncomment the line below when you have separate HTML files:
+            // window.location.href = 'about.html';
+        }
+
         // Header scroll effect
         window.addEventListener('scroll', function() {
             const header = document.querySelector('.header');
